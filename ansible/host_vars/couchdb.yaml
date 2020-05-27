@@ -1,0 +1,14 @@
+---
+volume:
+  - device: /dev/vdc
+    mountpoint: /home/ubuntu/couchdb/data
+    
+db_dir: couchdb
+
+# Couch DB
+database_user: COMP90024
+database_password: COMP90024
+
+# Couch DB cluster
+nodename: "{{ ansible_eth0.ipv4.address }}"
+cookie: 9167703b76d4290a452cbecaff0007ce
